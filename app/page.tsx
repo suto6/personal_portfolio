@@ -34,12 +34,12 @@ export default function Home() {
 
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <div className="inline-block px-4 py-2 rounded-full bg-[#003300] text-[#00FF00] mb-6">
+            <div className="inline-block px-4 py-2 rounded-full bg-[#003300] text-[#fa3c75] mb-6">
               👋 Hi There! I&apos;m SUTO
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              A <span className="text-[#00FF00]">{_text}</span>. I Help Startups{" "}
-              <span className="text-[#00FF00]">Launch</span> And <span className="text-[#00FF00]">Grow</span> Their
+              A <span className="text-[#fa3c75]">{_text}</span>. I Help Startups{" "}
+              <span className="text-[#fa3c75]">Launch</span> And <span className="text-[#fa3c75]">Grow</span> Their
               Products
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
@@ -86,9 +86,9 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.1 }}
-              className="border border-[#00FF00] rounded-lg p-4 text-center hover:bg-[#00FF00]/10 transition-colors"
+              className="border border-[#fa3c75] rounded-lg p-4 text-center hover:bg-[#fa3c75]/10 transition-colors"
             >
-              <span className="text-[#00FF00]">{tool.name}</span>
+              <span className="text-[#fa3c75]">{tool.name}</span>
             </motion.div>
           ))}
         </motion.div>
@@ -125,7 +125,7 @@ export default function Home() {
           </a>
           <a
             href="#"
-            className="flex items-center justify-center py-8 px-4 bg-[#00FF00] hover:bg-[#00FF00]/80 transition-colors"
+            className="flex items-center justify-center py-8 px-4 bg-[#fa3c75] hover:bg-[#fa3c75]/80 transition-colors"
           >
             <Calendar className="w-8 h-8" />
           </a>

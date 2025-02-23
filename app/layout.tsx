@@ -8,8 +8,8 @@ import NoiseOverlay from "@/components/noise-overlay"
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Onyedika",
-  description: "Creative Developer",
+  title: "Suto",
+  description: "Creator | Builder",
 }
 
 export default function RootLayout({
