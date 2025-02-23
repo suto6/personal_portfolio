@@ -6,35 +6,34 @@ import Image from "next/image"
 import { Github, Linkedin, Twitter, Calendar } from "lucide-react"
 
 const tools = [
+  { name: "Next Js", icon: "netx" },
   { name: "React", icon: "react" },
-  { name: "Angular", icon: "angular" },
+  { name: "Flutter", icon: "flutter" },
   { name: "Node", icon: "node" },
-  { name: "MongoDB", icon: "mongodb" },
+  { name: "React-Native", icon: "react-native" },
   { name: "JavaScript", icon: "javascript" },
-  { name: "Figma", icon: "figma" },
-  { name: "Sass", icon: "sass" },
+  { name: "GenAI", icon: "AI" },
   { name: "TypeScript", icon: "typescript" },
-  { name: "Solidity", icon: "solidity" },
-  { name: "Polygon", icon: "polygon" },
+  { name: "Python", icon: "python" },
+  { name: "SQL", icon: "sql" },
 ]
 
 export default function Home() {
   const [_text] = useTypewriter({
-    words: ["Frontend Engineer", "UI/UX Designer", "Problem Solver"],
+    words: ["Creator/Builder", "App Developer", "Indie Hacker"],
     loop: true,
     delaySpeed: 2000,
   })
 
   return (
     <div className="relative">
-      {/* Hero Section */}
       <div className="min-h-screen flex items-center relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
         <div className="absolute inset-0 star-pattern" />
 
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <div className="inline-block px-4 py-2 rounded-full bg-[#003300] text-[#fa3c75] mb-6">
+            <div className="inline-block px-4 py-2 rounded-full bg-[#330033] text-[#fa3c75] mb-6">
               👋 Hi There! I&apos;m SUTO
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -43,9 +42,9 @@ export default function Home() {
               Products
             </h1>
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              I am a software engineer with more than four years of experience, recognized as a practical and effective
-              developer, experienced in leading cross-functional teams in a time-pressured setting to complete projects
-              on schedule and within budget.
+              I&apos;ve built applications using React.js, Next.js, React Native, and Flutter. I love participating in hackathons and tech events—1x hackathon runner-up!
+
+              Lately, I’ve been diving into Generative AI and AI automation, and I’m absolutely loving it. I’m also passionate about micro-startups and solving real-world problems. Launching my product soon!
             </p>
           </motion.div>
 
@@ -53,10 +52,10 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative h-[400px]"
+            className="relative h-[500px]"
           >
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2HobO7PGERVlpKDMUuzXcZeZNDZEmD.png"
+              src="/image.png"
               alt="Developer Illustration"
               fill
               className="object-contain"
@@ -106,19 +105,19 @@ export default function Home() {
 
         <div className="grid grid-cols-4 max-w-4xl mx-auto">
           <a
-            href="#"
+            href="https://github.com/suto6"
             className="flex items-center justify-center py-8 px-4 bg-[#333] hover:bg-[#444] transition-colors"
           >
             <Github className="w-8 h-8" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/sutapa-b-8b60bb2aa/"
             className="flex items-center justify-center py-8 px-4 bg-[#0077B5] hover:bg-[#0077B5]/80 transition-colors"
           >
             <Linkedin className="w-8 h-8" />
           </a>
           <a
-            href="#"
+            href="https://x.com/SutoBiswas"
             className="flex items-center justify-center py-8 px-4 bg-[#1DA1F2] hover:bg-[#1DA1F2]/80 transition-colors"
           >
             <Twitter className="w-8 h-8" />

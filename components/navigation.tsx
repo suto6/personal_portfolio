@@ -14,10 +14,10 @@ export default function Navigation() {
             className="fixed w-full z-40 top-0 py-8"
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <Link href="/" className="text-xl font-medium hover:opacity-60 transition-opacity">
+                <Link href="/" className="text-2xl font-medium hover:opacity-60 transition-opacity">
                     SUTO
                 </Link>
-                <ul className="flex gap-8">
+                <ul className="flex gap-8 text-2xl">
                     {[
                         { href: "/", label: "Home" },
                         { href: "/work", label: "Work" },
@@ -26,7 +26,7 @@ export default function Navigation() {
                         <li key={href}>
                             <Link
                                 href={href}
-                                className={`relative text-sm tracking-wider hover:opacity-60 transition-opacity ${pathname === href ? "text-white" : "text-gray-400"
+                                className={`relative text-lg tracking-wider hover:opacity-60 transition-opacity ${pathname === href ? "text-white" : "text-gray-400"
                                     }`}
                             >
                                 <motion.span
