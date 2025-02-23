@@ -43,7 +43,7 @@ export default function Work() {
             transition={{ duration: 0.8 }}
             className="pt-32 min-h-screen"
         >
-            <div className="container mx-auto px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="container mx-auto px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
                 {projects.map((project, index) => (
                     <motion.div
                         key={index}
@@ -65,8 +65,8 @@ export default function Work() {
                         </a>
 
                         <div className="p-4 bg-black/80">
-                            <h3 className="text-[#fa3c75] text-xl font-bold mb-2">{project.title}</h3>
-                            <p className="text-white text-sm mb-2">{project.description}</p>
+                            <h3 className="text-[#fa3c75] text-3xl font-bold mb-2">{project.title}</h3>
+                            <p className="text-lg text-gray-400 leading-relaxed mb-2">{project.description}</p>
                             <div className="flex flex-wrap gap-2">
                                 {project.techStack?.map((tech, index) => (
                                     <span

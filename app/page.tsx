@@ -44,7 +44,7 @@ export default function Home() {
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
               I&apos;ve built applications using React.js, Next.js, React Native, and Flutter. I love participating in hackathons and tech events—1x hackathon runner-up!
 
-              Lately, I’ve been diving into Generative AI and AI automation, and I’m absolutely loving it. I’m also passionate about micro-startups and solving real-world problems. Launching my product soon!
+              Lately, I&apos;ve been diving into Generative AI and AI automation, and I&apos;m absolutely loving it. I&apos;m also passionate about micro-startups and solving real-world problems. Launching my product soon!
             </p>
           </motion.div>
 
