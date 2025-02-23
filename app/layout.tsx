@@ -10,6 +10,9 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Suto",
   description: "Creator | Builder",
+  icons: {
+    icon: '/logo.png', // Path to your logo.png file in the public directory
+  },
 }
 
 export default function RootLayout({

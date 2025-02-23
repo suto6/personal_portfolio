@@ -13,13 +13,6 @@ const projects = [
         techStack: ["React Native", "Expo", "Firebase"],
     },
     {
-        title: "React Movie",
-        description: "Stay Upto Date With Trending Movies. See The Author Of These Movies And Their Casts Also View The",
-        image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-h4spsl4M9AlxJZGKPVXlnrsEyCIlf7.png",
-        link: "https://react-movie-example.com",
-        techStack: ["React", "JavaScript", "CSS"],
-    },
-    {
         title: "SkeleAR",
         description: "SkeleAR is an innovative AR-powered application designed to make learning human anatomy interactive and engaging. With SkeleAR, users can explore a 3D skeleton model, click on bones to highlight them, and access detailed descriptions with audio explanations.",
         image: "/skeleAR.png",

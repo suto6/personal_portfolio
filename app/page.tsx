@@ -6,11 +6,11 @@ import Image from "next/image"
 import { Github, Linkedin, Twitter, Calendar } from "lucide-react"
 
 const tools = [
-  { name: "Next Js", icon: "netx" },
-  { name: "React", icon: "react" },
-  { name: "Flutter", icon: "flutter" },
-  { name: "Node", icon: "node" },
   { name: "React-Native", icon: "react-native" },
+  { name: "Flutter", icon: "flutter" },
+  { name: "React", icon: "react" },
+  { name: "Next Js", icon: "netx" },
+  { name: "Node", icon: "node" },
   { name: "JavaScript", icon: "javascript" },
   { name: "GenAI", icon: "AI" },
   { name: "TypeScript", icon: "typescript" },
@@ -20,7 +20,7 @@ const tools = [
 
 export default function Home() {
   const [_text] = useTypewriter({
-    words: ["Creator/Builder", "App Developer", "Indie Hacker"],
+    words: ["App Developer", "Creator/Builder", "Indie Hacker"],
     loop: true,
     delaySpeed: 2000,
   })
@@ -34,7 +34,7 @@ export default function Home() {
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <div className="inline-block px-4 py-2 rounded-full bg-[#330033] text-[#fa3c75] mb-6">
-              👋 Hi There! I&apos;m SUTO
+              👋 Hi There! I&apos;m Sutapa
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               A <span className="text-[#fa3c75]">{_text}</span>. I Help Startups{" "}
