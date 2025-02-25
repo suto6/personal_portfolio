@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import { useTypewriter } from "react-simple-typewriter"
 import Image from "next/image"
 import { Github, Linkedin, Twitter, Calendar } from "lucide-react"
+import CalendlyWidget from "@/components/CalendlyWidget"
+import { useState } from "react"
 
 const tools = [
   { name: "React-Native", icon: "react-native" },
@@ -24,6 +26,16 @@ export default function Home() {
     loop: true,
     delaySpeed: 2000,
   })
+
+  const [showCalendly, setShowCalendly] = useState(false)
+
+  const handleCalendarClick = () => {
+    setShowCalendly(true)
+  }
+
+  const handleCloseCalendly = () => {
+    setShowCalendly(false)
+  }
 
   return (
     <div className="relative">
@@ -122,14 +134,24 @@ export default function Home() {
           >
             <Twitter className="w-8 h-8" />
           </a>
-          <a
-            href="#"
+          <button
+            onClick={handleCalendarClick}
             className="flex items-center justify-center py-8 px-4 bg-[#fa3c75] hover:bg-[#fa3c75]/80 transition-colors"
           >
             <Calendar className="w-8 h-8" />
-          </a>
+          </button>
         </div>
       </section>
+      {showCalendly && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-50 flex items-center justify-center">
+          <div className="bg-white rounded-lg p-8">
+            <CalendlyWidget />
+            <button onClick={handleCloseCalendly} className="mt-4 px-4 py-2 bg-[#fa3c75] text-white rounded">
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

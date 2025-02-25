@@ -2,8 +2,20 @@
 
 import { motion } from "framer-motion"
 import { Github, Linkedin, Twitter, Calendar } from "lucide-react"
+import CalendlyWidget from "@/components/CalendlyWidget"
+import { useState } from "react"
 
 export default function Contact() {
+    const [showCalendly, setShowCalendly] = useState(false)
+
+    const handleCalendarClick = () => {
+        setShowCalendly(true)
+    }
+
+    const handleCloseCalendly = () => {
+        setShowCalendly(false)
+    }
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -48,16 +60,13 @@ export default function Contact() {
                         <span>Twitter</span>
                     </motion.a>
 
-                    <motion.a
-                        href="#"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4 }}
+                    <button
+                        onClick={handleCalendarClick}
                         className="flex flex-col items-center gap-4 p-8 rounded-lg bg-[#fa3c75] hover:bg-[#fa3c75]/80 transition-colors"
                     >
                         <Calendar className="w-12 h-12" />
                         <span>Calendly</span>
-                    </motion.a>
+                    </button>
                 </div>
 
                 <motion.div
@@ -72,6 +81,16 @@ export default function Contact() {
                     </a>
                 </motion.div>
             </div>
+            {showCalendly && (
+                <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-50 flex items-center justify-center">
+                    <div className="bg-white rounded-lg p-8">
+                        <CalendlyWidget />
+                        <button onClick={handleCloseCalendly} className="mt-4 px-4 py-2 bg-[#fa3c75] text-white rounded">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </motion.div>
     )
 }
